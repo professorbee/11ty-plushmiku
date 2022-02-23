@@ -1,0 +1,10 @@
+---
+permalink: "/api/images.json"
+---
+{
+    "images": [
+        {% for item in imagesList %}
+            "{{item}}"{% if not loop.last  %},{% endif %}
+        {% endfor %}
+    ]
+}
