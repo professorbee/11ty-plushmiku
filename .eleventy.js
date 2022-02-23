@@ -7,4 +7,10 @@ module.exports = function(config) {
         var images = glob.sync("./images/*")
         return images
     })
+
+    return {
+        dir: {
+            output: "docs"
+        }
+    }
 }
